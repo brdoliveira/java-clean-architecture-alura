@@ -1,4 +1,4 @@
-package escola;
+package escola.dominio.aluno;
 
 import org.junit.jupiter.api.Test;
 
