@@ -1,5 +1,6 @@
-package escola;
+package escola.dominio.aluno;
 
+import escola.dominio.aluno.Telefone;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
