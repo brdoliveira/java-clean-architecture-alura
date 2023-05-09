@@ -22,4 +22,8 @@ public class Indicacao {
     public Aluno getIndicante() {
         return indicante;
     }
+
+    public LocalDateTime getDataIndicacao() {
+        return dataIndicacao;
+    }
 }
