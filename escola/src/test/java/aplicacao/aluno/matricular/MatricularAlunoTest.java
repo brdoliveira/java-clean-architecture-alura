@@ -5,26 +5,30 @@ import escola.aplicacao.aluno.matricular.MatricularAlunoDTO;
 import escola.dominio.aluno.Aluno;
 import escola.dominio.aluno.CPF;
 import escola.infra.aluno.RepositorioDeAlunosEmMemoria;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class MatricularAlunoTest {
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-    @Test
-    void alunoDeverisaSerPersistido(){
-        RepositorioDeAlunosEmMemoria repositorio = new RepositorioDeAlunosEmMemoria();
-        MatricularAluno useCase = new MatricularAluno(repositorio);
+class MatricularAlunoTest {
 
-        MatricularAlunoDTO dados = new MatricularAlunoDTO(
-                "Fulano",
-                "123.456.789-00",
-                "fulano@email.com"
-        );
-        useCase.executa(dados);
+	@Test
+	void alunoDeveriaSerPersistido() {
+		// MOCK -> Mockito
+		RepositorioDeAlunosEmMemoria repositorio = new RepositorioDeAlunosEmMemoria();
+		MatricularAluno useCase = new MatricularAluno(repositorio);
+		
+		MatricularAlunoDTO dados = new MatricularAlunoDTO(
+				"Fulano", 
+				"123.456.789-00", 
+				"fulano@email.com");
+		useCase.executa(dados);
+		
+		Aluno encontrado = repositorio.buscarPorCPF(
+				new CPF("123.456.789-00"));
+		
+		assertEquals("Fulano", encontrado.getNome());
+		assertEquals("123.456.789-00", encontrado.getCpf());
+		assertEquals("fulano@email.com", encontrado.getEmail());
+	}
 
-        Aluno alunoEncontrado = repositorio.buscarPorCPF(new CPF("123.456.789-00"));
-        Assertions.assertEquals("Fulano",alunoEncontrado.getNome());
-        Assertions.assertEquals("123.456.789-00",alunoEncontrado.getCpf());
-        Assertions.assertEquals("fulano@email.com",alunoEncontrado.getEmail());
-    }
 }
