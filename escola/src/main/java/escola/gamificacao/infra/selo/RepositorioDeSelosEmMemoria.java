@@ -1,6 +1,6 @@
 package escola.gamificacao.infra.selo;
 
-import escola.academico.dominio.aluno.CPF;
+import escola.shared.dominio.CPF;
 import escola.gamificacao.dominio.selo.RepositorioDeSelos;
 import escola.gamificacao.dominio.selo.Selo;
 

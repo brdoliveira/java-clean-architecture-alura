@@ -1,7 +1,7 @@
 package escola.academico.infra.aluno;
 
 import escola.academico.dominio.aluno.*;
-import escola.dominio.aluno.*;
+import escola.shared.dominio.CPF;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

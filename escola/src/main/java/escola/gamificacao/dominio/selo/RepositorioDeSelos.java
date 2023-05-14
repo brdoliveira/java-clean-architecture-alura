@@ -1,6 +1,6 @@
 package escola.gamificacao.dominio.selo;
 
-import escola.academico.dominio.aluno.CPF;
+import escola.shared.dominio.CPF;
 
 import java.util.List;
 

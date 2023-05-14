@@ -2,7 +2,7 @@ package escola.academico.infra.aluno;
 
 import escola.academico.dominio.aluno.Aluno;
 import escola.academico.dominio.aluno.AlunoNaoEncontrado;
-import escola.academico.dominio.aluno.CPF;
+import escola.shared.dominio.CPF;
 import escola.academico.dominio.aluno.RepositorioDeAlunos;
 
 import java.util.ArrayList;
