@@ -1,5 +1,6 @@
-package escola.academico.dominio.aluno;
+package escola.shared.dominio;
 
+import escola.shared.dominio.CPF;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

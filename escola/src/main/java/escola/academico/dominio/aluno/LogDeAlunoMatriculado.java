@@ -1,6 +1,8 @@
-package escola.academico.dominio;
+package escola.academico.dominio.aluno;
 
-import escola.academico.dominio.aluno.AlunoMatriculado;
+import escola.shared.dominio.evento.Evento;
+import escola.shared.dominio.evento.Ouvinte;
+import escola.shared.dominio.evento.TipoDeEvento;
 
 import java.time.format.DateTimeFormatter;
 
@@ -24,7 +26,7 @@ public class LogDeAlunoMatriculado extends Ouvinte {
     }
 
     @Override
-    protected boolean deveProcessaar(Evento evento) {
-        return evento instanceof AlunoMatriculado;
+    protected boolean deveProcessar(Evento evento) {
+        return evento.tipo() == TipoDeEvento.ALUNO_MATRICULADO;
     }
 }

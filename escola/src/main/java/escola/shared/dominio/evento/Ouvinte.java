@@ -1,14 +1,14 @@
-package escola.academico.dominio;
+package escola.shared.dominio.evento;
 
 public abstract class Ouvinte {
     public void processa(Evento evento){
-        if(this.deveProcessaar(evento)){
+        if(this.deveProcessar(evento)){
             this.reageAo(evento);
         }
     }
 
     protected abstract void reageAo(Evento evento);
 
-    protected abstract boolean deveProcessaar(Evento evento);
+    protected abstract boolean deveProcessar(Evento evento);
 
 }
