@@ -1,6 +1,6 @@
 package escola.gamificacao.dominio.selo;
 
-import escola.academico.dominio.aluno.CPF;
+import escola.shared.dominio.CPF;
 
 public class Selo {
     private CPF cpfDoAluno;
