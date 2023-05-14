@@ -2,10 +2,10 @@ package escola.academico.matricular;
 
 import escola.academico.aplicacao.aluno.matricular.MatricularAluno;
 import escola.academico.aplicacao.aluno.matricular.MatricularAlunoDTO;
-import escola.academico.dominio.LogDeAlunoMatriculado;
-import escola.academico.dominio.PublicadorDeEventos;
+import escola.academico.dominio.aluno.LogDeAlunoMatriculado;
+import escola.shared.dominio.evento.PublicadorDeEventos;
 import escola.academico.dominio.aluno.Aluno;
-import escola.academico.dominio.aluno.CPF;
+import escola.shared.dominio.CPF;
 import escola.academico.infra.aluno.RepositorioDeAlunosEmMemoria;
 import org.junit.jupiter.api.Test;
 

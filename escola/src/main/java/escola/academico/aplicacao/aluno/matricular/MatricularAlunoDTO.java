@@ -1,6 +1,6 @@
 package escola.academico.aplicacao.aluno.matricular;
 
-import escola.academico.dominio.aluno.CPF;
+import escola.shared.dominio.CPF;
 import escola.academico.dominio.aluno.Email;
 import escola.academico.dominio.aluno.Aluno;
 
