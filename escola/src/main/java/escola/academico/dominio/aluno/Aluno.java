@@ -1,5 +1,7 @@
 package escola.academico.dominio.aluno;
 
+import escola.shared.dominio.CPF;
+
 import java.util.ArrayList;
 import java.util.List;
 
